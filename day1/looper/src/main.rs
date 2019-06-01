@@ -48,4 +48,37 @@ fn array_loop() {
         println!("{}", n)
     }
 
+    // Reserved word continue
+    let m = vec![4, 7, 8, 9, 10, 11];
+
+    for n in m {
+        if n % 2 == 0 {
+            continue;
+        }
+        println!("Continue {}", n)
+    }
+
+    // Reserved word break
+    let a = vec![4, 7, 8, 9, 11, 10];
+
+    for n in a {
+        if n == 11 {
+            break;
+        }
+        println!("Break {}", n)
+    }
+
+    // Nested loop
+    // https://doc.rust-lang.org/rust-by-example/flow_control/loop/nested.html
+    let c = vec![4, 7, 8, 9, 11, 10];
+
+    'outer: for i in 0..10 {
+        for n in &c {
+            if i + *n == 11 {
+                break 'outer;
+            }
+            println!("nested {}", n)
+        }
+    }
+
 }
