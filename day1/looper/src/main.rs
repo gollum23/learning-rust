@@ -80,5 +80,4 @@ fn array_loop() {
             println!("nested {}", n)
         }
     }
-
 }
