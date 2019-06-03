@@ -1,0 +1,9 @@
+[package]
+name = "assignment"
+version = "0.1.0"
+authors = ["Diego Forero <gollum23@gmail.com>"]
+license = "MIT"
+description = "A library for parsing money"
+keywords = ["Money","Parse"]
+
+[dependencies]
