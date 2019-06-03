@@ -1,0 +1,6 @@
+[package]
+name = "useful"
+version = "0.1.0"
+authors = ["Diego Forero <gollum23@gmail.com>"]
+
+[dependencies]
